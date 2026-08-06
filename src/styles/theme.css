@@ -1,0 +1,89 @@
+:root {
+  --c-gold: #f5c900;
+  --c-red: #e4633c;
+  --c-white: #e8e8e8;
+  --c-gray: #b4b4b4;
+  --c-bg: #0b0e11;
+  --font-cyber: 'Rajdhani', 'Segoe UI', sans-serif;
+  --font-digital: 'Digital Readout Upright', 'Rajdhani', monospace;
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('/fonts/rajdhani-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rajdhani Medium';
+  src: url('/fonts/raj-medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('/fonts/raj-semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('/fonts/raj-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Digital Readout Upright';
+  src: url('/fonts/digitalreadoutupright.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--c-bg);
+  overflow: hidden;
+  font-family: var(--font-cyber);
+  color: var(--c-white);
+}
+
+.cyberware-screen,
+.character-screen,
+.stats-screen {
+  position: absolute;
+  background: var(--c-bg);
+  overflow: hidden;
+  transform-origin: top left;
+}
+
+.background {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 50% 40%, rgba(229, 99, 60, 0.06), transparent 60%),
+    linear-gradient(180deg, #10151a 0%, #0b0e11 100%);
+}
+
+.screen-title {
+  position: absolute;
+  top: 40px;
+  left: 80px;
+  font-size: 46px;
+  letter-spacing: 8px;
+  color: var(--c-gold);
+  text-transform: uppercase;
+}

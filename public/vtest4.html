@@ -1,0 +1,8 @@
+<!doctype html><html><body style="margin:0;background:#222">
+<video id="v" src="/videos/paperdoll/male_body_loop.webm" loop muted playsinline preload="auto"
+ style="position:absolute;left:50%;top:50%;width:540px;height:960px;transform:translate(-50%,-50%);background:#00ff00"></video>
+<script>
+const v=document.getElementById('v');
+document.title='loading';
+v.addEventListener('canplay',()=>{v.play().then(()=>{setTimeout(()=>{document.title='SHOT ready='+v.readyState+' paused='+v.paused;},1500);});});
+</script></body></html>
