@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://github.com/AndresBlancoSierra/cp2077-ui-react">
+    <img src="https://raw.githubusercontent.com/AndresBlancoSierra/cp2077-ui-react/main/profile.svg" alt="CP2077 UI — React — cp2077-ui-react@arch">
+  </a>
+</p>
+
 # CP2077 UI — React
 
 Réplica de la **interfaz de Cyberpunk 2077** en React/TypeScript: menú central
